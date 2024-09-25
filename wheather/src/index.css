@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background: url("https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* App container */
+.App {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+  backdrop-filter: blur(10px); /* Frosted glass blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle white border */
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Input fields */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  box-sizing: border-box;
+}
+
+input[type="text"]::placeholder {
+  color: #ddd;
+}
+
+/* Top section */
+.top {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.city p {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+
+.temp h1 {
+  font-size: 64px;
+  color: #ff6b6b;
+  margin: 10px 0;
+}
+
+.sky p {
+  font-size: 20px;
+  color: #ddd;
+  margin: 0;
+}
+
+/* Bottom section */
+.bopttom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.bopttom div {
+  text-align: center;
+  flex: 1;
+}
+
+.feels p,
+.humidity p,
+.wind p {
+  font-size: 18px;
+  color: #fff;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.bopttom div:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .App {
+    width: 90%;
+  }
+
+  .temp h1 {
+    font-size: 48px;
+  }
+
+  .city p {
+    font-size: 20px;
+  }
+}
