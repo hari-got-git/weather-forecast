@@ -15,7 +15,7 @@ function App() {
     axios.get(url).then((response) => {
       setData(response.data)
       console.log(response.data);
-      console.log("hiii");
+      console.log("server responded back to user");
     })
   }
   }
